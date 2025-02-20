@@ -1,7 +1,6 @@
 ﻿using CommunityToolkit.Maui.Storage;
 using MVRC_Compare.Shared.Models;
 using MVRC_Compare.Shared.Services;
-using System.Threading;
 
 namespace MVRC_Compare.Services;
 
@@ -47,10 +46,12 @@ public class WindowsCaseProviderService : ICaseProviderService
 
         var images = Directory.GetFiles(reportPicDir);
 
-        return new MvrcCase
+        var mvrcCase = new MvrcCase
         {
             FilePath = path,
             Images = images.ToList()
         };
+
+        return mvrcCase;
     }
 }

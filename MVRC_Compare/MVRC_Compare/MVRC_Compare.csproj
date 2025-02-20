@@ -61,10 +61,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="CodeBeam.MudBlazor.Extensions" Version="8.0.0" />
     <PackageReference Include="CommunityToolkit.Maui" Version="11.1.0" />
     <PackageReference Include="Microsoft.Maui.Controls" Version="9.0.40" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="9.0.40" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.2" />
+    <PackageReference Include="MudBlazor" Version="8.2.0" />
+    <PackageReference Include="Toolbelt.Blazor.HotKeys2" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
